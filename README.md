@@ -2,6 +2,13 @@
 
 A new Flutter project.
 
+## Screenshot
+<tr>
+    <td><img align="left" src="https://raw.githubusercontent.com/iamEtornam/hello_word_poc/main/screenshots/art_1.png" width="200" height="400"/></td>
+    <td><img src="https://raw.githubusercontent.com/iamEtornam/hello_word_poc/main/screenshots/art_2.png" width="200" height="400"/></td> 
+</tr>
+</br>
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
