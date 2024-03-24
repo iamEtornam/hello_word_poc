@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,6 +29,27 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final MethodChannel _channel = const MethodChannel('hello_world_poc/app');
+  String message = "";
+
+  Future<String> getMessage() async {
+    final result = await _channel.invokeMethod('hello_world_poc');
+    return result;
+  }
+
+  Future<void> getMessageFromNative() async {
+    final platformMessage = await getMessage();
+    setState(() {
+      message = platformMessage;
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    getMessageFromNative();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'message',
+             message,
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
