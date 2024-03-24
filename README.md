@@ -4,8 +4,8 @@ A new Flutter project.
 
 ## Screenshot
 <tr>
-    <td><img align="left" src="https://raw.githubusercontent.com/iamEtornam/hello_word_poc/main/screenshots/art_1.png" width="200" height="400"/></td>
-    <td><img src="https://raw.githubusercontent.com/iamEtornam/hello_word_poc/main/screenshots/art_2.png" width="200" height="400"/></td> 
+    <td><img align="left" src="https://github.com/iamEtornam/hello_word_poc/blob/main/screenshots/art_1.png" width="200" height="400"/></td>
+    <td><img src="https://github.com/iamEtornam/hello_word_poc/blob/main/screenshots/art_2.png" width="200" height="400"/></td> 
 </tr>
 </br>
 
